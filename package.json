@@ -1,5 +1,5 @@
 {
-  "name": "@prisma/extension-read-replicas-tushar",
+  "name": "extension-read-replicas-tushar",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
