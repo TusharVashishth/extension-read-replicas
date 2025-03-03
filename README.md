@@ -1,4 +1,4 @@
-# @prisma/extension-read-replicas
+# prisma-read-replicas-extension-tushar
 
 This [Prisma Client Extension](https://www.prisma.io/docs/concepts/components/prisma-client/client-extensions) adds read replica support to your Prisma Client. Under the hood, this extension creates additional Prisma Clients for the read replica database connection strings, and then routes read queries to these Clients instead of using the primary Prisma Client.
 
@@ -13,19 +13,19 @@ Depending on the package manager of your choice:
 ### `npm`
 
 ```sh
-npm install @prisma/extension-read-replicas
+npm install prisma-read-replicas-extension-tushar
 ```
 
 ### `yarn`
 
 ```sh
-yarn add @prisma/extension-read-replicas
+yarn add prisma-read-replicas-extension-tushar
 ```
 
 ### `pnpm`
 
 ```sh
-pnpm add @prisma/extension-read-replicas
+pnpm add prisma-read-replicas-extension-tushar
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ pnpm add @prisma/extension-read-replicas
 
 ```ts
 import { PrismaClient } from '@prisma/client'
-import { readReplicas } from '@prisma/extension-read-replicas'
+import { readReplicas } from 'prisma-read-replicas-extension-tushar'
 
 const prisma = new PrismaClient().$extends(
   readReplicas({
